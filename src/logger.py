@@ -1,4 +1,4 @@
-import logging as log
+import logging 
 import os
 
 from datetime import datetime
@@ -10,10 +10,10 @@ os.makedirs(logs_path,exist_ok=True)
 
 LOG_FILE_PATH=os.path.join(logs_path,LOG_FILE)
 
-log.basicConfig(
+logging.basicConfig(
     filename=LOG_FILE_PATH,
     format="[ %(asctime)s ] %(levelno)d %(name)s -%(funcName)s -%(levelname)s - %(message)s",
-    level=log.INFO,
+    level=logging.INFO,
     
 )
 
